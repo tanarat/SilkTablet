@@ -35,10 +35,7 @@
             android:name="org.hsc.silk.UpdateActivity"
             android:label="@string/title_activity_update_data"
             android:windowSoftInputMode="adjustResize|stateVisible" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <activity
             android:name="org.hsc.silk.checklist.SheetListActivity"
@@ -80,10 +77,7 @@
             android:name="org.hsc.silk.checklist.ViewPagerActivity"
             android:label="@string/title_activity_audit_detail"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+       
         </activity>
         <activity
             android:name="org.hsc.silk.checklist.SheetItemDetailActivity"
@@ -94,10 +88,7 @@
             android:name="org.hsc.silk.MainMenuActivity"
             android:label="@string/app_name"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            
         </activity>
         <provider android:name=".db.SILKProvider" android:authorities="org.hsc.silk.db.contentprovider"></provider>
     </application>

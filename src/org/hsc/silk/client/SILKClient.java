@@ -35,6 +35,7 @@ import org.json.JSONObject;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 public class SILKClient {
 	public static final String tag = "SILKClient";
@@ -141,7 +142,7 @@ public class SILKClient {
 		
 		listener.onUpdateFinished();
 	}
-	/*
+	
 	public String getJsonStringFromUrl(String url){
 		String json = null;
 		DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -166,12 +167,13 @@ public class SILKClient {
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			Log.e(tag, "IOException");
 			e.printStackTrace();
 		}
 		return json;
 	}
-	*/
 	
+	/*
 	public String getJsonStringFromUrl(String url){
 		String json = null;
 		NetworkTask task = new NetworkTask();
@@ -186,15 +188,18 @@ public class SILKClient {
 		}
 		return json;
 	}
-	
+	*/
 	public User getUser(String name, String password){
+		Log.i(tag, "getUser : " + name);
 		StringBuilder sb = new StringBuilder(SILK_URL+USER_PATH) ;
 		sb.append("?name="+name);
 		sb.append("&password="+password);
+		Log.i(tag, "url : " + sb.toString());
 		User user = null;
 		JSONObject jsonObj;
 		try {
 			jsonObj = new JSONObject(getJsonStringFromUrl(sb.toString()));
+			Log.i(tag, jsonObj.toString());
 			if(jsonObj != null){
 				user = User.newInstance(jsonObj);
 			}

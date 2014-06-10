@@ -43,9 +43,9 @@ public class MainActivity extends Activity implements OnClickListener{
 		
 		setContentView(R.layout.activity_main);
 		
-//		if (app.getUser() == null){
-//			doLogin();
-//		}
+		if (app.getUser() == null){
+			doLogin();
+		}
 		
 //		findViewById(R.id.btnUpdate).setOnClickListener(this);
 		findViewById(R.id.btnSheet).setOnClickListener(this);

@@ -221,6 +221,7 @@ public class LoginActivity extends Activity {
 			Log.i(tag, "try login silk server");
 			user = silkClient.getUser(mEmail, mPassword);
 			if(user != null){
+				Log.i(tag, "user : " + user.getName());
 				userDao.insert(user);
 				return true;
 			}
