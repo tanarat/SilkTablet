@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttomPanel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblChecklist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_checklist"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnChecklist"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtChecklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnChecklist"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblBPartner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_bpartner"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnBPartner"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtBPartner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnBPartner"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblBPLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_bplocation"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnBPLocation"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtBPLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnBPLocation"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLocationDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eee"
+                android:paddingLeft="20dp"
+                android:lines="3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/lblAuditType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_audit_type"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnAuditType"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtAuditType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnAuditType"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblAuditDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_audit_date"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnAuditDate"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtAuditDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnAuditDate"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lblAuditTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_audit_time"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnAuditTime"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/txtAuditTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btnAuditTime"
+                    android:background="#eee"
+                    android:paddingLeft="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/lblAuditSummary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaa"
+                android:paddingLeft="5dp"
+                android:text="@string/lbl_audit_summary"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee" />
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" 
+           	android:layout_marginLeft="10dp"
+            >
+
+                <TextView
+                    android:id="@+id/lbl_number_of_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_number_of_item"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/txtNumberOfItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" 
+            android:layout_marginLeft="10dp" 
+            >
+
+                <TextView
+                    android:id="@+id/lbl_number_of_conform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_number_of_conform"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/txtNumberOfConform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            </LinearLayout>
+            
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"  
+            android:layout_marginLeft="10dp"
+            >
+
+                <TextView
+                    android:id="@+id/lbl_number_of_nonconform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_number_of_nonconform"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/txtNumberOfNonConform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttomPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttomPanel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View" />
+    </LinearLayout>
+</RelativeLayout>

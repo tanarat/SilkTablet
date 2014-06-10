@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.hsc.silk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="16" />
+	
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:name="org.hsc.silk.SilkTablet"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.hsc.silk.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hsc.silk.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        
+        <activity
+            android:name="org.hsc.silk.UpdateActivity"
+            android:label="@string/title_activity_update_data"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SheetListActivity"
+            android:label="@string/title_activity_sheet"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SheetDetailActivity"
+            android:label="@string/title_activity_sheet_detail"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SelectChecklistActivity"
+            android:label="@string/title_activity_select_checklist"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SearchBpActivity"
+            android:label="@string/title_activity_search_bp"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SelectBpLocActivity"
+            android:label="@string/title_activity_select_bp_loc"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SelectAuditTypeActivity"
+            android:label="@string/title_activity_select_audit_type"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.ViewPagerActivity"
+            android:label="@string/title_activity_audit_detail"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.hsc.silk.checklist.SheetItemDetailActivity"
+            android:label="@string/title_activity_sheet_item_detail"
+            >
+        </activity>
+        <activity
+            android:name="org.hsc.silk.MainMenuActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".db.SILKProvider" android:authorities="org.hsc.silk.db.contentprovider"></provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee" 
+    >
+
+    <TextView
+        android:id="@+id/tvSheetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="Sheet name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/tvChecklistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSheetName"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="Checklist name"
+        android:layout_below="@+id/tvSheetName"
+        android:textColor="#333"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvChecklistName"
+        android:layout_below="@+id/tvChecklistName"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_marginTop="5dp"
+        android:text="Description"
+        android:textColor="#555"
+        android:layout_marginBottom="20dp"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

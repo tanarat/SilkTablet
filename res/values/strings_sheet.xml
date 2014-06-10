@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_sheet">รายการตรวจประเมิน</string>
+    <string name="action_checklist">แบบประเมิน</string>
+    <string name="action_regulation">ข้อกำหนด</string>
+    <string name="action_bpartner">ผู้ประกอบการ</string>
+    <string name="title_activity_sheet">รายการตรวจประเมิน</string>
+    <string name="title_activity_sheet_detail">รายละเอียดการตรวจประเมิน</string>
+    <string name="title_activity_select_checklist">แบบประเมิน</string>
+    <string name="title_activity_search_bp">ผู้ประกอบการ</string>
+    <string name="title_activity_select_bp_loc">สถานที่ตรวจประเมิน</string>
+    <string name="title_activity_select_audit_type">ประเภทการตรวจประเมิน</string>
+    <string name="action_new_sheet">สร้างใหม่</string>
+    <string name="lbl_checklist">แบบประเมิน </string>
+    <string name="lbl_bpartner">ผู้ประกอบการ</string>
+    <string name="lbl_bplocation">ที่อยู่</string>
+    <string name="lbl_audit_type">การประเมิน</string>
+    <string name="lbl_audit_date">วันที่</string>
+    <string name="lbl_audit_time">เวลา</string>
+    <string name="lbl_audit_summary">สรุปการประเมิน</string>
+    <string name="lbl_number_of_item">จำนวนรายการตรวจประเมิน :</string>
+    <string name="lbl_number_of_conform">สอดคล้อง :</string>
+	<string name="lbl_number_of_nonconform">ไม่สอดคล้อง :</string>
+	<string name="hint_bp_name">ผู้ประกอบการ</string>
+</resources>

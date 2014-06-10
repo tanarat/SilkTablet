@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" 
+    >
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="45dp"
+    android:src="@drawable/hsc_logo1" />
+
+<Button
+    android:id="@+id/btnSheet"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    android:layout_alignLeft="@+id/imageView1"
+    android:layout_below="@+id/imageView1"
+    android:layout_marginTop="122dp"
+    android:text="@string/action_sheet"
+    android:textSize="30sp" />
+
+<Button
+    android:id="@+id/btnChecklist"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    android:layout_alignBaseline="@+id/btnSheet"
+    android:layout_alignBottom="@+id/btnSheet"
+    android:layout_alignRight="@+id/imageView1"
+    android:text="@string/action_checklist"
+    android:textSize="30sp" />
+
+<Button
+    android:id="@+id/btnRegulation"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    android:layout_alignLeft="@+id/btnSheet"
+    android:layout_below="@+id/btnSheet"
+    android:layout_marginTop="36dp"
+    android:text="@string/action_regulation"
+    android:textSize="30sp" />
+
+<Button
+    android:id="@+id/btnBpartner"
+    android:layout_width="320dp"
+    android:layout_height="150dp"
+    android:layout_alignBaseline="@+id/btnRegulation"
+    android:layout_alignBottom="@+id/btnRegulation"
+    android:layout_alignLeft="@+id/btnChecklist"
+    android:text="@string/action_bpartner"
+    android:textSize="30sp" />
+
+</RelativeLayout>
